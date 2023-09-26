@@ -45,7 +45,7 @@ export default function MainComponent() {
                 }
             }
             else if (Rename.length > 15) {
-                alert('Sorry! 15 symbols only')
+                alert('Sorry! 15 symbols only, maybe bigger version soon')
             }
         }
 
@@ -56,8 +56,8 @@ export default function MainComponent() {
             const newValue = event.target.value;
           
             if (newValue.length > 15) {
-              alert('Sorry! 15 symbols only');
-              setInputValue(newValue.slice(0, 27)); // Truncate the input to 27 characters
+              alert('Sorry! 15 symbols only, maybe bigger version soon');
+              setInputValue(newValue.slice(0, 16)); 
             } else {
               setInputValue(newValue);
             }
